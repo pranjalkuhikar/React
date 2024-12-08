@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "customs";
+  src: url("https://use.typekit.net/af/61489c/0000000000000000774c4d91/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "normals";
+  src: url("https://uploads-ssl.webflow.com/6454cbf2dcc426c6ec47ef06/64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
