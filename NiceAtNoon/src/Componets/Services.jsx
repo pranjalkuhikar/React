@@ -3,11 +3,11 @@ import Box from "./Box";
 
 const Services = () => {
   return (
-    <div className="px-10">
+    <div className="px-5 md:px-10">
       <div className="pt-40 text-base font-semibold tracking-tight">
         Services
       </div>
-      <div className="mt-10 flex items-center justify-between">
+      <div className="mt-10 flex flex-wrap items-center justify-between">
         <div className="w-72 text-2xl font-semibold">
           This way we distinguish you from the standard
         </div>
@@ -17,7 +17,7 @@ const Services = () => {
           width={"bg-zinc-100"}
         />
       </div>
-      <div className="mt-10 flex flex-wrap items-center justify-between gap-4">
+      <div className="mt-10 flex flex-auto flex-wrap items-center justify-center gap-4">
         <Box
           img="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64cac464ae61273a7c937ded_BRAND%20STORY_Over-Nan-p-800.jpg"
           heading="Brand Story"
@@ -43,7 +43,7 @@ const Services = () => {
           style="bg-[#FA8A58]"
         />
       </div>
-      <div className="mt-20 w-[40em] font-sans text-2xl font-normal">
+      <div className="mt-20 w-full font-normal font-sans text-xl md:text-2xl lg:w-[40em]">
         NiceAtNoon is fris, jong en een tikkeltje eigenzinnig. W.ars van jargon
         en allergisch voor byoureayou blabla, gaan we lekker samen aan de slag
         met joyouw merk. En dat moet vooral leyouk zijn! W.ant plezier nemen we

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Tag = ({ text }) => {
   return (
-    <div className="rounded-lg border bg-gray-500 px-4 py-1 text-sm text-white">
+    <div className="min-w-fit rounded-lg border bg-gray-400 px-3 py-1 text-sm text-white md:px-4">
       {text}
     </div>
   );

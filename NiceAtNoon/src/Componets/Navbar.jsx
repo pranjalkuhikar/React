@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex h-20 w-full items-center justify-between px-10">
-        <div className="h-7">
+        <div className="hidden h-7 md:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -82,15 +82,22 @@ const Navbar = () => {
             ></path>
           </svg>
         </div>
-        <div className="flex items-center justify-between gap-6 font-sans text-xl font-normal">
-          <div className="cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 tracking-tight transition-all duration-700 ease-out hover:bg-black hover:text-white">
-            Projects
+        <div className="flex items-center justify-between gap-6 font-normal font-sans text-xl">
+          <div className="hidden items-center justify-center gap-6 lg:flex">
+            <div className="cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 tracking-tight transition-all duration-700 ease-out hover:bg-black hover:text-white">
+              Projects
+            </div>
+            <div className="cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 tracking-tight transition-all duration-700 ease-out hover:bg-black hover:text-white">
+              About
+            </div>
+            <div className="cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 font-medium tracking-tight underline transition-all duration-700 ease-out hover:bg-black hover:text-white">
+              Contact
+            </div>
           </div>
-          <div className="cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 tracking-tight transition-all duration-700 ease-out hover:bg-black hover:text-white">
-            About
-          </div>
-          <div className="cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 font-medium tracking-tight underline transition-all duration-700 ease-out hover:bg-black hover:text-white">
-            Contact
+          <div>
+            <div className="block cursor-pointer rounded-2xl border border-slate-700 px-4 py-2 tracking-tight transition-all duration-700 ease-out hover:bg-black hover:text-white lg:hidden">
+              Menu
+            </div>
           </div>
         </div>
       </div>

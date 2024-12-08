@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 const Button = ({ text, style, width }) => {
   return (
     <div
-      className={`${style} transition-border group mt-3 flex cursor-pointer flex-col justify-center gap-1 rounded-lg bg-white px-5 py-3 text-base font-semibold duration-500 hover:rounded-3xl`}
+      className={`${style} transition-border group mt-3 flex min-w-48 cursor-pointer flex-col justify-center gap-1 rounded-lg bg-white px-5 py-3 text-base font-semibold duration-500 hover:rounded-3xl`}
     >
       <div className="flex items-center justify-center gap-5">
         {text}

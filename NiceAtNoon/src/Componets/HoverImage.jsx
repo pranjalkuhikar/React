@@ -3,8 +3,8 @@ import Tag from "./Tag";
 /* eslint-disable react/prop-types */
 const HoverImage = ({ img1, img2, header, para, text1, text2, text3 }) => {
   return (
-    <>
-      <div className="group relative mt-16 h-[70vh] w-full overflow-hidden rounded-3xl transition-all duration-500 hover:rounded-[9em]">
+    <div className="flex flex-col items-start justify-between">
+      <div className="group relative mt-16 h-full w-full overflow-hidden rounded-3xl transition-all duration-500 hover:rounded-[9em]">
         <img
           src={img1}
           alt=""
@@ -25,7 +25,7 @@ const HoverImage = ({ img1, img2, header, para, text1, text2, text3 }) => {
           <Tag text={text3} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,12 +3,12 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <div className="mt-12">
-      <div className="flex h-1/2 items-end justify-between px-10">
-        <div className="w-[85%] font-custom text-9xl font-medium leading-[0.9em] tracking-tight">
+      <div className="flex h-1/2 flex-wrap items-end justify-between px-5 md:px-10">
+        <div className="w-[85%] font-custom text-6xl font-medium leading-[0.9em] tracking-tight md:text-7xl lg:text-9xl">
           <div className="w-10/12">
             Tyourning heads and conqyouering hearts
             <svg
-              className="ml-10 inline h-20 w-20 animate-spin"
+              className="ml-5 inline h-14 w-14 animate-spin lg:ml-10 lg:h-20 lg:w-20"
               style={{ animationDuration: "8s" }}
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -30,7 +30,7 @@ const Hero = () => {
             </svg>
           </div>
         </div>
-        <div className="flex h-full w-[23%] flex-col items-start justify-end gap-10 font-sans text-xl font-normal leading-[1.2em] tracking-tight">
+        <div className="mt-10 flex h-full w-80 flex-col items-start justify-end gap-10 font-normal font-sans text-xl leading-[1.2em] tracking-tight md:w-96">
           <div>
             NiceAtNoon is a boutique design studio specializing in branding and
             web design.
@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
       <Slider />
-      <div className="mb-10 w-[90%] px-10 text-3xl font-normal leading-tight tracking-tight">
+      <div className="mb-10 w-full px-5 font-normal text-2xl leading-tight tracking-tight md:px-10 lg:w-[90%] lg:text-3xl">
         NiceAtNoon is een fijnschalige design styoudio voor merken die de
         hoofden en de harten van hyoun pyoubliek willen veroveren. Geobsedeerd
         door de magie van design, geloven we sterk in de kracht van story-

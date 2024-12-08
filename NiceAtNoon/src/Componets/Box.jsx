@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const Box = ({ img, heading, para, style }) => {
   return (
-    <div className="group h-[30em] w-[22em] cursor-pointer">
+    <div className="group h-[30em] max-w-[22em] cursor-pointer">
       <div className="h-3/5 w-full">
         <img
           src={img}
@@ -22,7 +22,7 @@ const Box = ({ img, heading, para, style }) => {
             <ArrowRight />
           </div>
         </div>
-        <div className="text-base font-normal tracking-normal text-white">
+        <div className="font-normal text-base tracking-normal text-white">
           {para}
         </div>
       </div>

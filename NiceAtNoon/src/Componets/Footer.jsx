@@ -3,16 +3,16 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-between px-10 py-20 text-white">
+      <div className="flex flex-wrap justify-between px-10 py-20 text-white">
         <div className="mb-10 flex flex-col items-start gap-5 text-5xl font-semibold">
           Let&apos;s turn some heads!
           <Button
             text={"Contact"}
-            style={"bg-[#0A0B0C] w-fit border border-zinc-100 text-white"}
+            style={"bg-zinc-950 w-fit border border-zinc-100  text-white"}
             width={"bg-white"}
           />
         </div>
-        <div className="mb-5 flex items-start justify-between gap-10 uppercase">
+        <div className="mb-5 flex flex-wrap items-start justify-between gap-14 uppercase">
           <div>
             <h1 className="mb-4 font-custom text-lg font-semibold capitalize">
               Socials

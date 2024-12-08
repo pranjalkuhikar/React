@@ -3,7 +3,7 @@ const Stuff = () => {
     <div className="relative px-10 py-40">
       <div className="text-3xl font-semibold">Did some cool stuff for</div>
       <hr className="my-4 border-zinc-900" />
-      <div className="flex flex-wrap items-center justify-start gap-48 text-2xl font-semibold text-gray-400">
+      <div className="flex flex-wrap items-center justify-start text-2xl font-semibold text-gray-400 lg:gap-48">
         <div className="flex flex-col items-start gap-2">
           <h1>Security service of MOOK</h1>
           <h1>Van der Heijden construction</h1>
