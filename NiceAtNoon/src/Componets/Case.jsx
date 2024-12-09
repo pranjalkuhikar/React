@@ -36,25 +36,29 @@ const Case = () => {
             text3="Web Design"
           />
         </div>
-        <div className="flex flex-wrap items-start justify-between gap-10">
-          <HoverImage
-            img1="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64cac65e2bf6eb87608fe500_GC_Flyers-Nan-min-p-3200.jpg"
-            img2="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64b7f94076df56f95d20243d_GAAF_DowntoEarth-min-p-3200.jpg"
-            header="Cool Creations"
-            para=" Creating mood-boosting experiences"
-            text1="Brand Story"
-            text2="Brand Identity"
-            text3="Web Design"
-          />
-          <HoverImage
-            img1="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb716dc15a767d726cdea_DM_header-p-3200.jpg"
-            img2="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb59c356882b9497fea77_DM_Hand%20Holding%20Pin-min.jpg"
-            header="Don't Mind"
-            para="Campaigners for eventful brands"
-            text1="Brand Story"
-            text2="Brand Identity"
-            text3="Web Design"
-          />
+        <div className="flex h-full w-full flex-wrap items-start justify-between gap-10">
+          <div className="lg:h-[60em] lg:max-w-[44em]">
+            <HoverImage
+              img1="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64cac65e2bf6eb87608fe500_GC_Flyers-Nan-min-p-3200.jpg"
+              img2="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64b7f94076df56f95d20243d_GAAF_DowntoEarth-min-p-3200.jpg"
+              header="Cool Creations"
+              para=" Creating mood-boosting experiences"
+              text1="Brand Story"
+              text2="Brand Identity"
+              text3="Web Design"
+            />
+          </div>
+          <div className="lg:h-[60em] lg:max-w-[44em]">
+            <HoverImage
+              img1="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb716dc15a767d726cdea_DM_header-p-3200.jpg"
+              img2="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb59c356882b9497fea77_DM_Hand%20Holding%20Pin-min.jpg"
+              header="Don't Mind"
+              para="Campaigners for eventful brands"
+              text1="Brand Story"
+              text2="Brand Identity"
+              text3="Web Design"
+            />
+          </div>
         </div>
         <div className="mt-10 flex w-fit flex-wrap items-center justify-center gap-4 rounded-xl bg-white px-10 py-2 pb-5 font-sans text-lg font-semibold md:gap-10 md:px-20 lg:gap-20">
           <div>Also working with your brand?</div>

@@ -3,12 +3,12 @@ import Tag from "./Tag";
 /* eslint-disable react/prop-types */
 const HoverImage = ({ img1, img2, header, para, text1, text2, text3 }) => {
   return (
-    <div className="flex flex-col items-start justify-between">
+    <div className="flex h-full w-full flex-col items-start justify-between">
       <div className="group relative mt-16 h-full w-full overflow-hidden rounded-3xl transition-all duration-500 hover:rounded-[9em]">
         <img
           src={img1}
           alt=""
-          className="relative h-full w-full object-cover transition-all duration-500 hover:scale-125"
+          className="relative h-full w-full object-cover transition-all duration-500 group-hover:scale-125"
         />
         <img
           src={img2}
