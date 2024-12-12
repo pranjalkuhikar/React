@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Mono";
+  src: url("/Font/Mono San/Mona-Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
