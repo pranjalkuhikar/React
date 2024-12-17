@@ -28,6 +28,7 @@ const Cards = ({ data, setCardsData }) => {
             </p>
             <div
               onClick={() => remove(idx)}
+              // onClick={() => console.log(idx)}
               className="absolute cursor-pointer right-0 top-0 translate-x-[50%] translate-y-[-50%] px-3 py-1 text-base bg-red-500 text-white rounded-full font-semibold "
             >
               X

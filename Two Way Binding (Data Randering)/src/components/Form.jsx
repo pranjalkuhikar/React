@@ -18,7 +18,6 @@ const Form = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const { title, description, img } = formValue;
     setCardsData([...cardsData, formValue]);
     setFormValue({ title: "", description: "", img: "" });
   };
