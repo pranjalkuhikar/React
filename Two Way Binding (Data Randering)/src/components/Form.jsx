@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import Cards from "./Cards";
 
@@ -18,9 +19,6 @@ const Form = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const { title, description, img } = formValue;
-    title.trim();
-    description.trim();
-    img.trim();
     setCardsData([...cardsData, formValue]);
     setFormValue({ title: "", description: "", img: "" });
   };
@@ -68,7 +66,7 @@ const Form = () => {
         </form>
       </div>
       <div className="mt-10 flex items-center justify-center flex-wrap gap-6">
-        <Cards data={cardsData} />
+        <Cards data={cardsData} setCardsData={setCardsData} />
       </div>
     </div>
   );
