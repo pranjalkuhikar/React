@@ -27,6 +27,7 @@ const Form = () => {
   };
   return (
     <div className="h-screen w-screen bg-zinc-800 p-10 flex items-stretch gap-6 justify-center">
+      {/* Form */}
       <div className="p-8 border w-1/2 border-stone-400 rounded-lg text-white">
         <h2 className="text-4xl tracking-tighter font-semibold underline">
           Add Contact
@@ -91,6 +92,7 @@ const Form = () => {
           </button>
         </form>
       </div>
+      {/* Card Rendering */}
       <div className="p-8 border w-1/2 border-stone-400 rounded-lg text-white">
         <h2 className="text-4xl tracking-tighter font-semibold underline">
           Contact List
