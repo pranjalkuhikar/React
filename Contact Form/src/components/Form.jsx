@@ -6,21 +6,22 @@ const Form = () => {
     name: "",
     company: "",
     number: "",
-    favorite: false,
   });
+  const [fav, setFav] = useState(false);
   const [card, setCard] = useState([]);
   const handlerChange = (event) => {
     setFormValue({ ...formValue, [event.target.name]: event.target.value });
   };
+  const handleFavoriteChange = (e) => setFav(e.target.checked);
   const handlerSubmit = (event) => {
     event.preventDefault();
-    setCard([...card, formValue]);
+    setCard([...card, { ...formValue, favorite: fav }]);
     setFormValue({
       name: "",
       company: "",
       number: "",
-      favorite: false,
     });
+    setFav(false);
   };
   const handleDelete = (index) => {
     setCard(card.filter((_, i) => i !== index));
@@ -80,8 +81,8 @@ const Form = () => {
             <input
               type="checkbox"
               name="favorite"
-              value={formValue.favorite}
-              onChange={handlerChange}
+              checked={fav}
+              onChange={handleFavoriteChange}
             />
             <label className="flex items-center space-x-1">
               <span className="text-zinc-100">Favorite</span>
@@ -114,7 +115,7 @@ const Form = () => {
                   </h3>
                   {card.favorite && (
                     <div className="px-4 py-1 rounded-xl font-semibold w-fit bg-yellow-500">
-                      {card.favorite ? " Favorite" : ""}
+                      {card.favorite ? "Favorite" : ""}
                     </div>
                   )}
                 </div>
