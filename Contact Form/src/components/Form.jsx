@@ -24,7 +24,10 @@ const Form = () => {
     setFav(false);
   };
   const handleDelete = (index) => {
-    setCard(card.filter((_, i) => i !== index));
+    // setCard(card.filter((_, i) => i !== index));
+    let updateCard = [...card];
+    updateCard.splice(index, 1);
+    setCard(updateCard);
   };
   return (
     <div className="h-screen w-screen bg-zinc-800 p-10 flex items-stretch gap-6 justify-center">
