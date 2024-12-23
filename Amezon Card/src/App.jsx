@@ -1,5 +1,7 @@
+import AddToCart from "./Components/AddToCart";
+
 const App = () => {
-  return <div>App</div>;
+  return <AddToCart />;
 };
 
 export default App;
