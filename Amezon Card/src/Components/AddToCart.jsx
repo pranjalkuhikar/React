@@ -6,20 +6,21 @@ import { useState } from "react";
 const AddToCart = () => {
   const [allProduct, setAllProduct] = useState([]);
   const [cart, setCart] = useState([]);
-  const [count, setCount] = useState(0);
   const [click, setClick] = useState({});
+  const [count, setCount] = useState(0);
+
+  const fetchData = async () => {
+    const response = await axios.get("https://fakestoreapi.com/products/");
+    setAllProduct(response.data);
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get("https://fakestoreapi.com/products/");
-      setAllProduct(response.data);
-    };
     fetchData();
   }, []);
+
   const handleClick = (idx) => {
     setCount((prev) => prev + 1);
-    // setClick((prev) => ({ ...prev, [idx]: !prev[idx] }));
-    setClick((prev) => ({ ...prev, [idx]: true }));
+    setClick((prev) => ({ ...prev, [idx]: !prev[idx] }));
     setCart((prev) => [...prev, allProduct[idx]]);
   };
   const handleRemoveFromCart = (idx) => {
@@ -46,7 +47,7 @@ const AddToCart = () => {
               allProduct.map((item, idx) => (
                 <div
                   key={idx}
-                  className="w-72 h-fit border mx-auto border-stone-400 rounded-lg overflow-hidden"
+                  className="w-72 border mx-auto border-stone-400 rounded-lg overflow-hidden"
                 >
                   <div className="w-full h-60">
                     <img
