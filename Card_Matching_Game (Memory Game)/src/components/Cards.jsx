@@ -61,12 +61,12 @@ const Cards = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center gap-10">
-      <h1 className="text-5xl underline font-light">Memory Game</h1>
+    <div className="w-screen h-screen flex flex-col items-center bg-zinc-800 text-white justify-center gap-10">
+      <h1 className="text-5xl underline font-mono font-light">Memory Game</h1>
 
       <div className="h-80 flex items-center justify-center">
         {gameWon ? (
-          <div className="text-4xl font-bold text-green-500">
+          <div className="text-4xl font-mono font-bold text-green-500">
             🎉 You Won! 🎉
           </div>
         ) : (
