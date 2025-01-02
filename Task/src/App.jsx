@@ -5,6 +5,7 @@ import Four from "./Components/4";
 import Five from "./Components/5";
 import Six from "./Components/6";
 import Seven from "./Components/7";
+import Eight from "./Components/8";
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
         <Six />
         <p>7 (Basic Form Validation)</p>
         <Seven />
+        <p>8 (Search Function)</p>
+        <Eight />
       </div>
     </div>
   );
