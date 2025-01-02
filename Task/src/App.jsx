@@ -3,6 +3,7 @@ import Two from "./Components/2nd";
 import Third from "./Components/3rd";
 import Four from "./Components/4";
 import Five from "./Components/5";
+import Six from "./Components/6";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
         <Four />
         <p>5 (Change the box color randomly)</p>
         <Five />
+        <p className="text-white">6 (Color)</p>
+        <Six />
       </div>
     </div>
   );
