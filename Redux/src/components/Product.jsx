@@ -6,8 +6,7 @@ import {
 } from "../store/actions/productActions";
 
 const Product = () => {
-  const { products, name } = useSelector((state) => state);
-  console.log(products, name);
+  const { products } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const newData = {
@@ -30,7 +29,7 @@ const Product = () => {
 
   return (
     <>
-      <button onClick={HandlerName}>Name {products.name}</button>
+      <button onClick={HandlerName}>Name{products.name}</button>
       {products.data.map((item, idx) => (
         <div key={idx}>
           <h2>{item.name}</h2>

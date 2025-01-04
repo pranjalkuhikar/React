@@ -32,10 +32,16 @@ const productSlice = createSlice({
       state.data = state.data.filter((_, idx) => idx !== action.payload.id);
     },
     changeName: (state, action) => {
+      console.log(action);
       state.name = action.payload;
+      console.log(state);
+    },
+    getData: (state, action) => {
+      state.data = action.payload;
     },
   },
 });
 
 export default productSlice.reducer;
-export const { addProduct, removeProduct, changeName } = productSlice.actions;
+export const { addProduct, removeProduct, changeName, getData } =
+  productSlice.actions;
