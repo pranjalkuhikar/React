@@ -1,9 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct, removeProduct } from "../store/actions/productActions";
+import {
+  addProduct,
+  asyncChangeName,
+  removeProduct,
+} from "../store/actions/productActions";
 
 const Product = () => {
-  const { data } = useSelector((state) => state.products);
-
+  const { products, name } = useSelector((state) => state);
+  console.log(products, name);
   const dispatch = useDispatch();
 
   const newData = {
@@ -20,9 +24,14 @@ const Product = () => {
     dispatch(removeProduct({ id }));
   };
 
+  const HandlerName = () => {
+    dispatch(asyncChangeName());
+  };
+
   return (
     <>
-      {data.map((item, idx) => (
+      <button onClick={HandlerName}>Name {products.name}</button>
+      {products.data.map((item, idx) => (
         <div key={idx}>
           <h2>{item.name}</h2>
           <p>Price: {item.price}</p>

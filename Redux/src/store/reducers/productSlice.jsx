@@ -18,6 +18,7 @@ const initialState = {
       price: 300,
     },
   ],
+  name: "Pranjal",
 };
 
 const productSlice = createSlice({
@@ -30,8 +31,11 @@ const productSlice = createSlice({
     removeProduct: (state, action) => {
       state.data = state.data.filter((_, idx) => idx !== action.payload.id);
     },
+    changeName: (state, action) => {
+      state.name = action.payload;
+    },
   },
 });
 
 export default productSlice.reducer;
-export const { addProduct, removeProduct } = productSlice.actions;
+export const { addProduct, removeProduct, changeName } = productSlice.actions;
