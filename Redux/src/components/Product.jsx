@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct, removeProduct } from "../store/reducers/productSlice";
+import { addProduct, removeProduct } from "../store/actions/productActions";
 
 const Product = () => {
   const { data } = useSelector((state) => state.products);
