@@ -1,9 +1,20 @@
 /* eslint-disable react/prop-types */
 const Cards = ({ data, setCardsData }) => {
-  const remove = (id) => {
-    const updatedData = [...data];
-    updatedData.splice(id, 1);
-    setCardsData(updatedData);
+  const remove = (idx) => {
+    // Method 1
+    // const updatedData = [...data];
+    // updatedData.splice(id, 1);
+    // setCardsData(updatedData);
+    // Method 2
+    setCardsData(data.filter((_, id) => id != idx));
+    // Method 3
+    // let newData = [];
+    // for (let i = 0; i < data.length; i++) {
+    //   if (i != idx) {
+    //     newData.push(data[i]);
+    //   }
+    // }
+    // setCardsData(newData);
   };
   return (
     <>
